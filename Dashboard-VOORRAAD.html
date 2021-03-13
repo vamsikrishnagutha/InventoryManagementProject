@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from www.radixtouch.in/templates/admin/Worksbot/source/light/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Feb 2021 12:19:25 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Voorraad Dashboard</title>
+    <!-- Favicon-->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="fontawesome-free-5.15.2-web\fontawesome-free-5.15.2-web\css\all.min.css" type="text/css">
+    <!-- Plugins Core Css -->
+    <link href="assets/css/app.min.css" rel="stylesheet">
+    <!-- Custom Css -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- Theme style. You can choose a theme from css/themes instead of get all themes -->
+    <link href="assets/css/styles/all-themes.css" rel="stylesheet" />
+</head>
+
+<body class="light">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="m-t-30">
+                <img class="loading-img-spin" src="assets/images/loading.png" alt="admin">
+            </div>
+            <p>Please wait...</p>
+        </div>
+    </div>
+    <!-- #END# Page Loader -->
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+    <!-- Top Bar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" onClick="return false;" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
+                    aria-expanded="false"></a>
+                <a href="#" onClick="return false;" class="bars"></a>
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" alt="" />
+                    <span class="logo-name">Worksbot</span>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <a href="#" onClick="return false;" class="sidemenu-collapse">
+                            <i class="nav-hdr-btn ti-align-left"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Full Screen Button -->
+                    <li class="fullscreen">
+                        <a href="javascript:;" class="fullscreen-btn">
+                            <i class="nav-hdr-btn ti-fullscreen"></i>
+                        </a>
+                    </li>
+                    <!-- #END# Full Screen Button -->
+                    <!-- #START# Notifications-->
+                    <li class="dropdown">
+                        <a href="#" onClick="return false;" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                            <i class="nav-hdr-btn ti-bell"></i>
+                       		<span class="notify"></span>
+                            <span class="heartbeat"></span>
+                        </a>
+                        <ul class="dropdown-menu pullDown">
+                            <li class="header">NOTIFICATIONS</li>
+                            <li class="body">
+                                <ul class="menu">
+                                    <li>
+                                        <a href="#" onClick="return false;">
+                                            <span class="table-img msg-user">
+                                                <img src="assets/images/user/user1.jpg" alt="">
+                                            </span>
+                                            <span class="menu-info">
+                                                <span class="menu-title">Sarah Smith</span>
+                                                <span class="menu-desc">
+                                                    <i class="material-icons">access_time</i> 14 mins ago
+                                                </span>
+                                                <span class="menu-desc">Please check your email.</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onClick="return false;">
+                                            <span class="table-img msg-user">
+                                                <img src="assets/images/user/user2.jpg" alt="">
+                                            </span>
+                                            <span class="menu-info">
+                                                <span class="menu-title">Airi Satou</span>
+                                                <span class="menu-desc">
+                                                    <i class="material-icons">access_time</i> 22 mins ago
+                                                </span>
+                                                <span class="menu-desc">Please check your email.</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onClick="return false;">
+                                            <span class="table-img msg-user">
+                                                <img src="assets/images/user/user3.jpg" alt="">
+                                            </span>
+                                            <span class="menu-info">
+                                                <span class="menu-title">John Doe</span>
+                                                <span class="menu-desc">
+                                                    <i class="material-icons">access_time</i> 3 hours ago
+                                                </span>
+                                                <span class="menu-desc">Please check your email.</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onClick="return false;">
+                                            <span class="table-img msg-user">
+                                                <img src="assets/images/user/user4.jpg" alt="">
+                                            </span>
+                                            <span class="menu-info">
+                                                <span class="menu-title">Ashton Cox</span>
+                                                <span class="menu-desc">
+                                                    <i class="material-icons">access_time</i> 2 hours ago
+                                                </span>
+                                                <span class="menu-desc">Please check your email.</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onClick="return false;">
+                                            <span class="table-img msg-user">
+                                                <img src="assets/images/user/user5.jpg" alt="">
+                                            </span>
+                                            <span class="menu-info">
+                                                <span class="menu-title">Cara Stevens</span>
+                                                <span class="menu-desc">
+                                                    <i class="material-icons">access_time</i> 4 hours ago
+                                                </span>
+                                                <span class="menu-desc">Please check your email.</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onClick="return false;">
+                                            <span class="table-img msg-user">
+                                                <img src="assets/images/user/user6.jpg" alt="">
+                                            </span>
+                                            <span class="menu-info">
+                                                <span class="menu-title">Charde Marshall</span>
+                                                <span class="menu-desc">
+                                                    <i class="material-icons">access_time</i> 3 hours ago
+                                                </span>
+                                                <span class="menu-desc">Please check your email.</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onClick="return false;">
+                                            <span class="table-img msg-user">
+                                                <img src="assets/images/user/user7.jpg" alt="">
+                                            </span>
+                                            <span class="menu-info">
+                                                <span class="menu-title">John Doe</span>
+                                                <span class="menu-desc">
+                                                    <i class="material-icons">access_time</i> Yesterday
+                                                </span>
+                                                <span class="menu-desc">Please check your email.</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer">
+                                <a href="#" onClick="return false;">View All Notifications</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- #END# Notifications-->
+                    <li class="dropdown user_profile">
+                        <div class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="assets/images/user.jpg" alt="user">
+                        </div>
+                        <ul class="dropdown-menu pullDown">
+                            <li class="body">
+                                <ul class="user_dw_menu">
+                                    <li>
+                                        <a href="pages\Profile page.html">
+                                            <i class="material-icons">person</i>Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onClick="return false;">
+                                            <i class="material-icons">feedback</i>Feedback
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onClick="return false;">
+                                            <i class="material-icons">help</i>Help
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onClick="return false;">
+                                            <i class="material-icons">power_settings_new</i>Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- #END# Tasks -->
+                    <li class="pull-right">
+                        <a href="#" onClick="return false;" class="js-right-sidebar" data-close="true">
+                            <i class="nav-hdr-btn ti-layout-grid2"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- #Top Bar -->
+    <div>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+                    <li>
+                        <div class="sidebar-profile clearfix">
+                            <div class="profile-img">
+                                <img src="assets/images/usrbig.jpg" alt="profile">
+                            </div>
+                            <div class="profile-info">
+                                <h3>Sarah Deo</h3>
+                                <p>Welcome Admin !</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header">Main</li>
+                    <li class="active">
+                        <a href="../../Worksbot Project/project/Dashboard-VOORRAAD.html">
+                            <i class="menu-icon ti-anchor"></i>
+                            <span>Dashboard</span>
+                        </a>       
+                    </li>
+                    <li>
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i class="menu-icon fas fa-id-card"></i>
+                            <span>Suppliers</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="pages/Add supplier page.html">Add Supplier</a>
+                            </li>
+                            <li>
+                                <a href="pages\Suppliers List.html">Suppliers List</a>
+                            </li>
+            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i class="menu-icon ti-layout-grid2"></i>
+                            <span>Categories</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="pages\Add Categories page.html">Add Categories</a>
+                            </li>
+                            <li>
+                                <a href="pages\Categories List.html">Categories List</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i class="menu-icon fas fa-cube"></i>
+                            <span>Warehouse</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="pages\Add Warehouse page.html">Add Warehouse</a>
+                            </li>
+                            <li>
+                                <a href="pages\Warehouse List.html">Warehouse List</a>
+                            </li>
+                           
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i class="menu-icon fas fa-file-invoice"></i>
+                            <span>Suppliers Invoice</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="pages\Add Suppliers Invoice page.html">Add Suppliers Invoice</a>
+                            </li>
+                            <li>
+                                <a href="pages\Suppliers Invoice-product list.html">Suppliers Invoice-product List</a>
+                            </li>
+                           
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i class="menu-icon ti-shopping-cart-full"></i>
+                            <span>Products</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="pages\Add Products page.html">Add Products</a>
+                            </li>
+                            <li>
+                                <a href="pages\Products List.html">Products List</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i class="menu-icon ti-shopping-cart"></i>
+                            <span>Expired Products</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="#">Inbox</a>
+                            </li>
+                            <li>
+                                <a href="#">Compose</a>
+                            </li>
+                           
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="menu-icon fas fa-dolly"></i>
+                            <span>Dead Stock</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="#">Inbox</a>
+                            </li>
+                            <li>
+                                <a href="#">Compose</a>
+                            </li>
+                           
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i class="menu-icon ti-user"></i>
+                            <span>Customers</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="pages\Add Customer page.html">Add Customer</a>
+                            </li>
+                            <li>
+                                <a href="pages\Customer list.html">Customers List</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i class="menu-icon ti-receipt"></i>
+                            <span>Invoice</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="pages\Add Invoice page.html">Add Invoice</a>
+                            </li>
+                            <li>
+                                <a href="pages\Invoices List.html">Invoices List</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i class="menu-icon fas fa-money-check-alt"></i>
+                            <span>Expenses</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="pages\Add Expense Type page.html">Add Expense Type</a>
+                            </li>
+                            <li>
+                                <a href="pages\Expense Types list.html">Expense Types List</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i class="menu-icon fas fa-dollar-sign"></i>
+                            <span>Loan</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="#">Loan</a>
+                            </li>
+                            <li>
+                                <a href="#">Loans List</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i class="menu-icon ti-user"></i>
+                            <span>Staff</span>
+                        </a>
+                        <ul class="ml-menu">
+                           
+                            <li>
+                                <a href="pages\Add Staff page.html">Add Staff</a>
+                            </li>
+                            <li>
+                                <a href="pages\Staff Lit.html">Staff List</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i class="menu-icon fas fa-chart-bar"></i>
+                            <span>Reports</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="#">amChart</a>
+                            </li>
+                            <li>
+                                <a href="#">Echart</a>
+                            </li>
+                            <li>
+                                <a href="#">ApexCharts</a>
+                            </li>
+                            <li>
+                                <a href="#">Morris</a>
+                            </li>
+                            <li>
+                                <a href="#">ChartJS</a>
+                            </li>
+                            <li>
+                                <a href="#">Sparkline</a>
+                            </li>
+                            <li>
+                                <a href="#">Jquery Knob</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i class="menu-icon fas fa-cog"></i>
+                            <span>Settings</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="#">Google Map</a>
+                            </li>
+                            <li>
+                                <a href="#">Vector Map</a>
+                            </li>
+                            <li>
+                                <a href="#">Data Map</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <aside id="rightsidebar" class="right-sidebar">
+            <ul class="nav nav-tabs tab-nav-right" role="tablist">
+                <li role="presentation">
+                    <a href="#skins" data-toggle="tab" class="active">SKINS</a>
+                </li>
+                <li role="presentation">
+                    <a href="#settings" data-toggle="tab">SETTINGS</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane in active in active stretchLeft" id="skins">
+                    <div class="demo-skin">
+                        <div class="rightSetting">
+                            <p>GENERAL SETTINGS</p>
+                            <ul class="setting-list list-unstyled m-t-20">
+                                <li>
+                                    <div class="form-check">
+                                        <div class="form-check m-l-10">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox" value="" checked> Save
+                                                History
+                                                <span class="form-check-sign">
+                                                    <span class="check"></span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <div class="form-check m-l-10">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox" value="" checked> Show
+                                                Status
+                                                <span class="form-check-sign">
+                                                    <span class="check"></span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <div class="form-check m-l-10">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox" value="" checked> Auto
+                                                Submit Issue
+                                                <span class="form-check-sign">
+                                                    <span class="check"></span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <div class="form-check m-l-10">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox" value="" checked> Show
+                                                Status To All
+                                                <span class="form-check-sign">
+                                                    <span class="check"></span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rightSetting">
+                            <p>SIDEBAR MENU COLORS</p>
+                            <button type="button" class="btn btn-sidebar-light btn-border-radius p-l-20 p-r-20">Light</button>
+                            <button type="button" class="btn btn-sidebar-dark btn-default btn-border-radius p-l-20 p-r-20">Dark</button>
+                        </div>
+                        <div class="rightSetting">
+                            <p>THEME COLORS</p>
+                            <button type="button" class="btn btn-theme-light btn-border-radius p-l-20 p-r-20">Light</button>
+                            <button type="button" class="btn btn-theme-dark btn-default btn-border-radius p-l-20 p-r-20">Dark</button>
+                        </div>
+                        <div class="rightSetting">
+                            <p>SKINS</p>
+                            <ul class="demo-choose-skin choose-theme list-unstyled">
+                                <li data-theme="black" class="actived">
+                                    <div class="black-theme"></div>
+                                </li>
+                                <li data-theme="white">
+                                    <div class="white-theme white-theme-border"></div>
+                                </li>
+                                <li data-theme="purple">
+                                    <div class="purple-theme"></div>
+                                </li>
+                                <li data-theme="blue">
+                                    <div class="blue-theme"></div>
+                                </li>
+                                <li data-theme="cyan">
+                                    <div class="cyan-theme"></div>
+                                </li>
+                                <li data-theme="green">
+                                    <div class="green-theme"></div>
+                                </li>
+                                <li data-theme="orange">
+                                    <div class="orange-theme"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane stretchRight" id="settings">
+                    <div class="demo-settings">
+                        <p>GENERAL SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Report Panel Usage</span>
+                                <div class="switch">
+                                    <label>
+                                        <input type="checkbox" checked>
+                                        <span class="lever switch-col-green"></span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Email Redirect</span>
+                                <div class="switch">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="lever switch-col-blue"></span>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>SYSTEM SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Notifications</span>
+                                <div class="switch">
+                                    <label>
+                                        <input type="checkbox" checked>
+                                        <span class="lever switch-col-purple"></span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Auto Updates</span>
+                                <div class="switch">
+                                    <label>
+                                        <input type="checkbox" checked>
+                                        <span class="lever switch-col-cyan"></span>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>ACCOUNT SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Offline</span>
+                                <div class="switch">
+                                    <label>
+                                        <input type="checkbox" checked>
+                                        <span class="lever switch-col-red"></span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Location Permission</span>
+                                <div class="switch">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="lever switch-col-lime"></span>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <section class="content">
+        <div class="container-fluid">
+            <h5>Last 365 Days Reports</h5>
+            <div class="row">
+                <div class="col-lg-3 col-sm">
+                    <div class="info-box6 danger" style="height: 120px;">
+                        <span class="count-numbers"style="margin-top: 30px;">$12366177</span>
+                        <span class="count-name"style="margin-top: 30px;">Total Receivable</span>
+                       
+                        <i class="ti-shopping-cart-full" style="color: rgba(15, 14, 14, 0.904);"></i>
+                       
+                   
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="info-box6 primary" style="height: 120px;">
+                   
+                        <i class="ti-bar-chart"style="color: rgba(15, 14, 14, 0.904);" ></i>
+                    
+                    
+                        <span class="count-numbers" style="margin-top: 30px;">$24463512</span>
+                        <span class="count-name"  style="margin-top: 30px;">Total Received Amount</span>
+                   
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="info-box6" style="height: 120px;background-color: orange;color: white;">
+                        <i class="ti-bar-chart"style="color: rgba(15, 14, 14, 0.904);"></i>
+                        <span class="count-numbers" style="margin-top: 30px;">$4422256</span>
+                        <span class="count-name" style="margin-top: 30px;">Total Discount Given</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="info-box6 success"style="height: 120px;">
+                        <i class="ti-bar-chart" style="color: rgba(15, 14, 14, 0.904);"></i>
+                        <span class="count-numbers" style="margin-top: 30px;">$36839514</span>
+                        <span class="count-name" style="margin-top: 30px;">Total Revenue</span>
+                    </div>
+                </div>
+            </div> 
+            <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="card"style="background-color:white;height:100px;">
+                    <div class="card-body">
+                    <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x icon-background" style="margin-top: 15px;color: red;" ></i>
+                    <i class="ti-receipt fa-stack-1x" style="color: white;margin-top: 15.5px;"></i>
+                </span>
+                    
+                    <span class="count-name" style="margin-left: 88px;font-size: medium;margin-top: 0%;" >Total Invoice</span>
+                    <p class="count-number"style="margin-left: 198px; font-weight:bold; font-size:25px; color: black;margin-top:0%;">366</p>
+               
+                    
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card"style="background-color:white;height:100px;">
+                    <div class="card-body">
+                    <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x icon-background" style="margin-top: 15px;color: green;" ></i>
+                    <i class="ti-bar-chart fa-stack-1x" style="color: white;margin-top: 15.5px;"></i>
+                </span>
+                    
+                <span class="count-name" style="margin-top: 30px; font-size: medium; margin-left: 144px;">Sales</span>
+                <span class="count-number" style="margin-top: 30px;font-size: 25px;font-weight: bold;color: black;margin-left: 124px;">$41251945</span>
+               
+                    
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card"style="background-color:white;height:100px;">
+                    <div class="card-body">
+                    <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x icon-background" style="margin-top: 15px;color: blue;" ></i>
+                    <i class="ti-shopping-cart-full fa-stack-1x" style="color: white;margin-top: 15.5px;"></i>
+                </span>
+                    
+                <span class="count-name" style="margin-top: 30px; font-size: medium; margin-left: 38px;">Sold Product Types</span>
+                <span class="count-number" style="margin-top: 30px;font-size: 25px;font-weight: bold;color: black;margin-left: 198px;">458</span>
+               
+                    
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card"style="background-color:white;height:100px;">
+                    <div class="card-body">
+                    <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x icon-background" style="margin-top: 15px;color: orange;" ></i>
+                    <i class="ti-shopping-cart-full fa-stack-1x" style="color: white;margin-top: 15.5px;"></i>
+                </span>
+                    
+                <span class="count-name" style="margin-top: 30px; font-size: medium; margin-left: 52px;">Total Sold Pro.Qty</span>
+                <span class="count-number" style="margin-top: 30px;font-size: 25px;font-weight: bold;color: black;margin-left: 170px;">34587</span>
+               
+                    
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card"style="background-color:white;height:100px;">
+                    <div class="card-body">
+                    <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x icon-background" style="margin-top: 15px;color: green;" ></i>
+                    <i class="ti-user fa-stack-1x" style="color: white;margin-top: 15.5px;"></i>
+                </span>
+                    
+                <span class="count-name" style="margin-top: 30px; font-size: medium; margin-left: 65px;">Total Customer</span>
+                <span class="count-number" style="margin-top: 30px;font-size: 25px;font-weight: bold;color: black;margin-left: 220px;">31</span>
+               
+                    
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card"style="background-color:white;height:100px;">
+                    <div class="card-body">
+                    <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x icon-background" style="margin-top: 15px;color: green;" ></i>
+                    <i class="ti-user fa-stack-1x" style="color: white;margin-top: 15.5px;"></i>
+                </span>
+                    
+                <span class="count-name" style="margin-top: 30px; font-size: medium; margin-left: 73px;">Total suppliers</span>
+                <span class="count-number" style="margin-top: 30px;font-size: 25px;font-weight: bold;color: black;margin-left: 230px;">6</span>
+               
+                    
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card"style="background-color:white;height:100px;">
+                    <div class="card-body">
+                    <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x icon-background" style="margin-top: 15px;color: blue;" ></i>
+                    <i class="ti-shopping-cart-full fa-stack-1x" style="color: white;margin-top: 15.5px;"></i>
+                </span>
+                    
+                <span class="count-name" style="margin-top: 30px; font-size: medium; margin-left: 35px;">Total Items in Stock</span>
+                <span class="count-number" style="margin-top: 30px;font-size: 25px;font-weight: bold;color: black;margin-left: 206px;">155</span>
+               
+                    
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card"style="background-color:white;height:100px;">
+                    <div class="card-body">
+                    <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x icon-background" style="margin-top: 15px;color: orange;" ></i>
+                    <i class="ti-shopping-cart-full fa-stack-1x" style="color: white;margin-top: 15.5px;"></i>
+                </span>
+                    
+                <span class="count-name" style="margin-top: 30px; font-size: medium; margin-left: 17px;">Total Item Categories</span>
+                <span class="count-number" style="margin-top: 30px;font-size: 25px;font-weight: bold;color: black;margin-left: 235px;">6</span>
+               
+                    
+                </div>
+            </div>
+            </div>
+           
+            
+        
+        </div>
+    
+    <div class="row clearfix">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+
+            <div class="card">
+                <div class="header">
+                    <h2>365 DAYS SALES CHART</h2>
+                </div>
+                <div class="body">
+                    <div id="donut_chart" class="graph"></div>
+                </div>
+            </div>
+        </div>
+                <div class="col-lg-8 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>
+                                Recent Invoices
+                                
+                            </h2>
+                            <ul class="header-dropdown m-r--5">
+                                <li>
+                                    <a href="#" >
+                                        <i class="material-icons">keyboard_arrow_down</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-toggle="cardloading" data-loading-effect="timer">
+                                        <i class="material-icons">loop</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="material-icons">clear</i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            <div class="table-responsive">
+                                <table id="tableExport" class="display table table-hover table-checkable order-column width-per-100">
+                                    <tbody>
+                                        <tr>
+                                            <td >1</td>
+                                            <td >New Customer</td>
+                                            <td> <a href="#">427</a></td>
+                                            <td >$0</td>
+                                            <td class="center">  
+                                                <span class="badge bg-danger" style="color: white;">Unpaid</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td >2</td>
+                                            <td >Ishaan</td>
+                                            <td> <a href="#">426</a></td>
+                                            <td >$0</td>
+                                            <td class="center">  
+                                                <span class="badge bg-success" style="color: white;">paid</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td >3</td>
+                                            <td >Muntazir</td>
+                                            <td> <a href="#">425</a></td>
+                                            <td >$100</td>
+                                            <td class="center">  
+                                                <span class="badge bg-danger" style="color: white;">Unpaid</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td >4</td>
+                                            <td >Ishaan</td>
+                                            <td> <a href="#">424</a></td>
+                                            <td >$0</td>
+                                            <td class="center">  
+                                                <span class="badge bg-success" style="color: white;">paid</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td >5</td>
+                                            <td >Mike</td>
+                                            <td> <a href="#">423</a></td>
+                                            <td >$50</td>
+                                            <td class="center">  
+                                                <span class="badge bg-danger" style="color: white;">Unpaid</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td >6</td>
+                                            <td >Shiva Kumar</td>
+                                            <td> <a href="#">422</a></td>
+                                            <td >$11040</td>
+                                            <td class="center">  
+                                                <span class="badge bg-success" style="color: white;">paid</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td >7</td>
+                                            <td >Shihab</td>
+                                            <td> <a href="#">421</a></td>
+                                            <td >$34000</td>
+                                            <td class="center">  
+                                                <span class="badge bg-success" style="color: white;">paid</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td >8</td>
+                                            <td >ab wahab</td>
+                                            <td> <a href="#">420</a></td>
+                                            <td >$2300</td>
+                                            <td class="center">  
+                                                <span class="badge bg-danger" style="color: white;">Unpaid</span>
+                                            </td>
+                                        </tr>
+                                       
+                                    </tbody>
+                                </table>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+<!-- Plugins Js -->
+<script src="assets/js/app.min.js"></script>
+<script src="assets/js/chart.min.js"></script>
+<!-- Custom Js -->
+<script src="assets/js/admin.js"></script>
+
+<script src="assets/js/pages/index.js"></script>
+<script src="assets\js\pages\charts\morris.js"></script>
+</body>
+</html>
